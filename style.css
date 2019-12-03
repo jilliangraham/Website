@@ -2842,7 +2842,7 @@ input, select, textarea {
 
 		#header .container {
 			background: rgba(255, 255, 255, 0.95);
-			bottom: 0;
+			/* bottom: 0; */
 			left: 50%;
 			margin-left: -22.5em;
 			padding: 2.5em;
@@ -3195,23 +3195,24 @@ input, select, textarea {
 }
 
 /* Navbar links */
-#navbar a {
+/* #navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
   text-decoration: none;
-}
+} */
 
 /* Page content */
 .contentpage {
-  padding: 16px;
+  padding-top: 144px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
+  z-index: 1;
+  position: fixed !important;
   top: 0;
   width: 100%;
 }
