@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
 
 /*
@@ -2441,7 +2441,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 500px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3244,4 +3244,52 @@ input, select, textarea {
 	}  
   }
 
- 
+ /*for narrow devices re: navbar*/
+ @media screen and (max-width: 800px) {
+	ul.actions.special {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	ul.actions.special {
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	ul.actions.special {
+		font-size: 10px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.container {
+		width: 100% !important;
+	}
+	ul.actions.special {
+		font-size: 12px;
+	}
+
+	ul.actions.special li {
+		padding: 0;
+		margin: 4px 0;
+		
+	}
+
+	ul.actions {
+		display: unset;
+		display: unset;
+		display: unset;
+		display: unset;
+	}
+
+	#header .container {
+		padding: 1em;
+		margin-left: 0;
+		left: unset;
+	}
+}
