@@ -93,13 +93,13 @@ var browser=function(){"use strict";var e={name:null,version:null,os:null,osVers
 
 					breakpoints.on('>medium', function() {
 
-						$headerTitle
-							.css('position', 'fixed')
-							.css('height', 'auto')
-							.css('top', '50%')
-							.css('left', '0')
-							.css('width', '100%')
-							.css('margin-top', ($headerTitle.outerHeight() / -2));
+						// $headerTitle
+						// 	.css('position', 'fixed')
+						// 	.css('height', 'auto')
+						// 	.css('top', '50%')
+						// 	.css('left', '0')
+						// 	.css('width', '100%')
+						// 	.css('margin-top', ($headerTitle.outerHeight() / -2));
 
 					});
 
