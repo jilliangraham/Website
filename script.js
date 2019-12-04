@@ -164,7 +164,7 @@ var browser=function(){"use strict";var e={name:null,version:null,os:null,osVers
 			// Create bg and append it to body.
 				$bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
 					.css('background-image', (
-						'url("assets/css/images/overlay.png"), url("' + $primaryImg.attr('src') + '")'
+						'url("' + $primaryImg.attr('src') + '")'
 					))
 					.appendTo($body);
 
@@ -775,12 +775,10 @@ var browser=function(){"use strict";var e={name:null,version:null,os:null,osVers
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
-console.log('HEre I am')
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-console.log('HEre I am again', content)
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
